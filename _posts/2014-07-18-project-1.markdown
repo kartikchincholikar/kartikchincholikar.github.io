@@ -9,3 +9,25 @@ client: Start Bootstrap
 category: Web Development
 description: Manifold Hypothesis Video - Upload GIF. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modal1-label">Manifold Hypothesis Video</h4>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9Oz4Dqz1HzY"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
