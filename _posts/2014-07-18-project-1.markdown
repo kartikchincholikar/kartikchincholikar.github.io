@@ -5,7 +5,7 @@ date: 2014-07-18
 img: cabin.gif
 alt: image-alt
 project-date: April 2014
-client: BePQBWPnYuE
+client: https://www.youtube.com/embed/BePQBWPnYuE
 category: Web Development
 description: Manifold Hypothesis Video - Upload GIF. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
