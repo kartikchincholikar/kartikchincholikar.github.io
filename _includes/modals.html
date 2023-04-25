@@ -18,11 +18,6 @@
            <!--<img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">--> 
             <p>{{ post.description }}</p>
             {% if post.client %}
-
-            var id = post.client
-            var base = "https://www.youtube.com/embed/"
-
-
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src= {{ post.client }} ></iframe>
             </div>
