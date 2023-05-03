@@ -7,7 +7,8 @@ keywords: "Kartik Chincholikar, Deep Learning, AI, Consultancy, Machine Learning
 skills: "Deep Learner - Teacher - Video Creator"
 meta_author: Chincholikar Kartik
 
-gem 'jekyll-sitemap'
+plugins:
+  - jekyll-sitemap
 
 # Google webmaster tools
 google_verify:
