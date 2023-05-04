@@ -3,7 +3,7 @@ title: Kartik Chincholikar
 email: fallingkartik@gmail.com
 url: https://kartikchincholikar.github.io/
 description: "Hey! I'm Kartik Chincholikar. I'm a Deep Learning professional with a love for communicating complex ideas in an easy manner"
-keywords: "Kartik Chincholikar, Deep Learning, AI, Consultancy, Machine Learning, BootCamp, Teaching, "
+keywords: "Kartik Chincholikar,Kartik C, Deep Learning, AI, Consultancy, Machine Learning, BootCamp, Teaching,Badminton School "
 skills: "Deep Learner - Teacher - Video Creator"
 meta_author: Chincholikar Kartik
 
@@ -28,8 +28,8 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: AED581 #80B3FF
-  primary-rgb: "174,213,129" #"128,179,255"
+  primary: 9CCC65 #80B3FF
+  primary-rgb: "156,204,101" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
