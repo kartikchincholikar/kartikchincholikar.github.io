@@ -16,7 +16,10 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          <!--<img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">-->
+          <video width="100%" height="auto" controls>
+            <source src="img/portfolio/{{ post.img }}" type="video/webm">
+          </video>
         </a>
       </div>
       {% endfor %}
