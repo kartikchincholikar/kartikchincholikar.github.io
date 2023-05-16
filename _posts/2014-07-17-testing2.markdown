@@ -2,7 +2,7 @@
 layout: default
 modal-id: testing2
 date: 2014-07-17
-img: cake.png
+img: cake.webm
 alt: image-alt
 project-date: April 2014
 client: https://www.youtube.com/watch?v=lsYPC0MuLJA
