@@ -9,20 +9,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#page-top">About</a>
+      <ul class="list-inline">
+        {% for network in site.social %}
+        <li>
+          <a href="{{ network.url }}" class="btn-social btn-outline"><i
+              class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <ul class="list-inline">
-          {% for network in site.social %}
-          <li>
-            <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
-          </li>
-          {% endfor %}
-        </ul>
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
