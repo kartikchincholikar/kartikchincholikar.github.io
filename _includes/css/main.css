@@ -126,7 +126,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 10;
+        padding: 25px 20;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -171,11 +171,6 @@ header .intro-text .skills {
     border: 0;
 }
 
-.navbar-collapse ul {
-    display: inline-block;
-    float: none;
-    text-align: center;
-  }
 
 section {
     padding: 100px 0;
