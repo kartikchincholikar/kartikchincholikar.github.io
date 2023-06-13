@@ -164,6 +164,9 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-default,
