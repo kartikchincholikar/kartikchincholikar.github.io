@@ -164,10 +164,13 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+}
+
+li a.btn-social.btn-outline {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
 .navbar-default,
 .navbar-inverse {
