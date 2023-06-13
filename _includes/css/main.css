@@ -166,7 +166,7 @@ header .intro-text .skills {
     outline: 0;
 }
 
-li a.btn-social.btn-outline {
+.collapse.navbar-collapse#bs-example-navbar-collapse-1 .nav.navbar-nav.navbar-right {
     display: flex;
     justify-content: center;
     align-items: center;
