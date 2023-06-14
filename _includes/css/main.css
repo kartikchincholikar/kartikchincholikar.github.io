@@ -166,11 +166,13 @@ header .intro-text .skills {
     outline: 0;
 }
 
-.collapse.navbar-collapse#bs-example-navbar-collapse-1 {
+
+.collapse.navbar-collapse {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
+
 
 .navbar-default,
 .navbar-inverse {
