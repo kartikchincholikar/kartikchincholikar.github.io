@@ -166,14 +166,6 @@ header .intro-text .skills {
     outline: 0;
 }
 
-
-.collapse.navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-
 .navbar-default,
 .navbar-inverse {
     border: 0;
