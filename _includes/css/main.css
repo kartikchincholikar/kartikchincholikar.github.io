@@ -87,8 +87,8 @@ header {
 }
 
 header .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -173,7 +173,7 @@ header .intro-text .skills {
 
 
 section {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 section h2 {
