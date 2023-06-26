@@ -5,10 +5,11 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+var offset = 100;
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().scrollTop($($anchor.attr('href')).offset().top, 0);
+        $('html, body').stop().scrollTop($($anchor.attr('href')).offset().top - offset, 0);
         event.preventDefault();
     });
 });
