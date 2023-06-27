@@ -18,7 +18,31 @@
             <p>{{ post.description }}</p><br>
             {% if post.client %}
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src= {{ post.client }} ></iframe>
+              {% if post.client.startswith('https://www.youtube.com/') %}
+                <iframe class="embed-responsive-item" src= {{ post.client }} ></iframe>
+              {% else %}
+                  <ol class="chat">
+                  	<li>
+                  		<div class="user">
+                  			<img src="profile.png" alt="Lorem"/>
+                  			<h3>Lorem</h3>
+                  		</div>
+                  		<blockquote>
+                  			<p>yo</p>
+                  		</blockquote>
+                  	</li>
+                  	<li>
+                  		<div class="user">
+                  			<img src="cabin.png" alt="Ipsum"/>
+                  			<h3>Ipsum</h3>
+                  		</div>
+                  		<blockquote>
+                  			<p>ssup</p>
+                  		</blockquote>	
+                  	</li>
+                  	<!-- continues -->
+                  </ol>
+              {% endif %}
             </div>
             {% endif %}
             <ul class="list-inline item-details">
