@@ -31,14 +31,14 @@ disqus_shortname: myshortname
 color:
   primary: 4F5A61 #80B3FF
   primary-rgb: "79,90,97" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  secondary: 4F5A61 #FD6E8A
+  secondary-dark: 4F5A61 #A2122F
 
 # Footer settings
 footer:
   copyright: 
   location: 
-  social: Around the Web
+  social:
   credits: 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
