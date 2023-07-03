@@ -188,13 +188,22 @@ section.success {
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;
+        padding: 15px 0;
     }
 
     section.first {
-        padding-top: 75px;
+        padding-top: 15px;
+    }
+
+}
+
+@media(max-width:767px) {
+    header .container {
+        padding-top: 70px;
+        padding-bottom: 15px;
     }
 }
+
 
 #contact {
   color: #fff;
