@@ -5,7 +5,7 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-var offset = 100;
+var offset = 60;
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
