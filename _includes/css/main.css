@@ -505,24 +505,3 @@ footer .footer-below {
 }
 
 
-.marquee {
-    height: 100px; /* Adjust the height as needed */
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .marquee p {
-    position: absolute;
-    top: 100%; /* Start the text below the container */
-    animation: marquee 10s infinite;
-  }
-  
-  @keyframes marquee {
-    0% {
-      top: 100%;
-    }
-    100% {
-      top: -100%; /* Move the text upward */
-    }
-  }
-  
