@@ -9,18 +9,18 @@ body {
 }
 
 p {
-    font-size: 14px;
-    font-family: Courier New;
+    font-size: 16px;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 li {
-    font-size: 14px;
-    font-family: Courier New;
+    font-size: 16px;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 p.small {
-    font-size: 20px;
-    font-family: Courier New;
+    font-size: 100px;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 
 a,
@@ -39,7 +39,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lucida Console", Monaco, monospace;
     font-weight: 700;
 }
 
@@ -106,9 +106,9 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lucida Console", Monaco, monospace;
     font-size: 2em;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 header .intro-text .skills {
@@ -157,8 +157,8 @@ header .intro-text .skills {
 
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 500;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: 700;
 }
 
 .navbar a:focus {
