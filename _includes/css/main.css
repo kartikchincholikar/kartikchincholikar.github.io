@@ -9,17 +9,17 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
     font-family: Courier New;
 }
 
 li {
-    font-size: 10px;
+    font-size: 14px;
     font-family: Courier New;
 }
 
 p.small {
-    font-size: 12px;
+    font-size: 20px;
     font-family: Courier New;
 }
 
