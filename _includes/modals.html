@@ -13,15 +13,17 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>{{ post.title }}</h2><br>
+           <!--<h2>{{ post.title }}</h2><br>--> 
            <!--<img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">--> 
-            <p style="text-align: left;">{{ post.description }}</p><br>
+            
             {% if post.client %}
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src= {{ post.client }} ></iframe>
             </div>
             {% endif %}
-            <ul class="list-inline item-details">
+            <p style="text-align: left;">{{ post.description }}</p><br>
+            
+            <!--<ul class="list-inline item-details">
               {% if post.project-date %}
               <li>Date:
                 <strong>{{ post.project-date }}</strong>
@@ -32,7 +34,7 @@
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
-            </ul>
+            </ul>-->
             
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
