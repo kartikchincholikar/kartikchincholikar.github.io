@@ -7,10 +7,11 @@ alt: image-alt
 project-date: March 2020
 client: https://www.youtube.com/embed/BePQBWPnYuE
 category: Deep Learning, Teaching
-description: Real datasets actually contain a tremendous amount of structure or
-  else we could not learn from them. This has been famously argued by Hume and
-  No Free Lunch theorems. \ Sanae Lotfi Et al 2023 \\ High dimensional real life
-  data lives on a low dimensional manifold.
+description: >
+  Real datasets actually contain a tremendous amount of structure or else we could not learn from them. This has been famously argued by Hume and No Free Lunch theorems.
+  Sanae Lotfi Et al 2023
+  
+  It is hypothesized that High dimensional real life data (such as Images) lives on a low dimensional manifold.
 ---
 
 
