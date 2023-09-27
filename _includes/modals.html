@@ -21,7 +21,14 @@
               <iframe class="embed-responsive-item" src= {{ post.client }} ></iframe>
             </div>
             {% endif %}
-            <br><p style="text-align: left;">{{ post.description }}</p><br>
+            <style>
+              .bold-helvetica {
+                font-family: Helvetica, Arial, sans-serif; /* Use Helvetica or fallback to Arial if unavailable */
+                font-weight: bold; /* Make the text bold */
+                text-transform: uppercase; /* Convert text to all uppercase */
+              }
+            </style>
+            <br><p style="text-align: left;" class="bold-helvetica">{{ post.description }}</p><br>
             
             <!--<ul class="list-inline item-details">
               {% if post.project-date %}
