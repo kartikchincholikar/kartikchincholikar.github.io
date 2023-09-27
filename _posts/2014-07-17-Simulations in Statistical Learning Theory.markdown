@@ -7,7 +7,7 @@ alt: image-alt
 project-date: January 2022
 client: https://www.youtube.com/embed/lsYPC0MuLJA
 category: Statistical Learning Theory, Teaching
-description: >
+description: |
   Everything Should Be Made as Simple as Possible, But Not Simpler
   Albert Einstein (probably)
   
