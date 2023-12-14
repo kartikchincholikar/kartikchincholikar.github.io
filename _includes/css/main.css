@@ -10,17 +10,17 @@ body {
 
 p {
     font-size: 16px;
-    font-family: "Inconsolata",Lucida Console, Monaco, monospace;
+    font-family: "Georgia",Lucida Console, Monaco, monospace;
 }
 
 li {
     font-size: 16px;
-    font-family: "Inconsolata",Lucida Console, Monaco, monospace;
+    font-family: "Georgia",Lucida Console, Monaco, monospace;
 }
 
 p.small {
     font-size: 100px;
-    font-family: "Inconsolata",Lucida Console, Monaco, monospace;
+    font-family: "Georgia",Lucida Console, Monaco, monospace;
 }
 
 a,
@@ -39,7 +39,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Inconsolata",Lucida Console, Monaco, monospace;
+    font-family: "Georgia",Lucida Console, Monaco, monospace;
     font-weight: 700;
 }
 
@@ -89,7 +89,7 @@ hr.star-primary:after {
 
 header {
     text-align: left;
-    color: #fff;
+    color: #000000;
     background: #{{ site.color.primary }};
 }
 
@@ -106,7 +106,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: "Inconsolata",Lucida Console, Monaco, monospace;
+    font-family: "Georgia",Lucida Console, Monaco, monospace;
     font-size: 2em;
     font-weight: 700;
 }
@@ -157,7 +157,7 @@ header .intro-text .skills {
 
 .navbar {
     text-transform: uppercase;
-    font-family: "Inconsolata",Lucida Console, Monaco, monospace;
+    font-family: "Georgia",Lucida Console, Monaco, monospace;
     font-weight: 700;
 }
 
@@ -184,7 +184,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #000000;
     background: #{{ site.color.primary }};
 }
 
@@ -208,12 +208,12 @@ section.success {
 
 
 #contact {
-  color: #fff;
+  color: #000000;
   background-color: #{{ site.color.primary }};
 }
 
 #portfolio {
-  color: #fff;
+  color: #000000;
   background-color: #{{ site.color.primary }};
 }
 
@@ -271,9 +271,9 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px #000000;
     font-size: 20px;
-    color: #fff;
+    color: #000000;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -282,8 +282,8 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 0px #fff;
-    color: #fff;
+    border: solid 0px #000000;
+    color: #000000;
     background: #{{ site.color.primary }};
 }
 
@@ -344,7 +344,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #000000;
 }
 
 footer h3 {
