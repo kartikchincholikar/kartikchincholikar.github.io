@@ -10,17 +10,17 @@ body {
 
 p {
     font-size: 16px;
-    font-family: "Georgia",Lucida Console, Monaco, monospace;
+    font-family: "Helvetica",Arial, Monaco, monospace;
 }
 
 li {
     font-size: 16px;
-    font-family: "Georgia",Lucida Console, Monaco, monospace;
+    font-family: "Helvetica",Arial, Monaco, monospace;
 }
 
 p.small {
     font-size: 100px;
-    font-family: "Georgia",Lucida Console, Monaco, monospace;
+    font-family: "Helvetica",Arial, Monaco, monospace;
 }
 
 a,
@@ -39,7 +39,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Georgia",Lucida Console, Monaco, monospace;
+    font-family: "Helvetica",Arial, Monaco, monospace;
     font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: "Georgia",Lucida Console, Monaco, monospace;
+    font-family: "Helvetica",Arial, Monaco, monospace;
     font-size: 2em;
     font-weight: 700;
 }
@@ -137,6 +137,7 @@ header .intro-text .skills {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        color: #000000;
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -144,6 +145,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        color: #000000;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -152,18 +154,21 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        color: #000000;
     }
 }
 
 .navbar {
     text-transform: uppercase;
-    font-family: "Georgia",Lucida Console, Monaco, monospace;
+    font-family: "Helvetica",Arial, Monaco, monospace;
     font-weight: 700;
+    color: #000000;
 }
 
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
+    color: #000000;
 }
 
 
