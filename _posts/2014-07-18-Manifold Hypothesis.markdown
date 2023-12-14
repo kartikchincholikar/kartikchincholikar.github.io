@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 1
-date: 2020-03-30
+date: 2023-09-20
 img: cabin.webm
 alt: image-alt
 project-date: March 2020
