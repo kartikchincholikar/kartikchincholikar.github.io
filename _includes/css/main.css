@@ -137,7 +137,6 @@ header .intro-text .skills {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        color: #000000;
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -145,7 +144,6 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        color: #000000;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -154,7 +152,7 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
-        color: #000000;
+
     }
 }
 
@@ -162,13 +160,13 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: "Helvetica",Arial, Monaco, monospace;
     font-weight: 700;
-    color: #000000;
+
 }
 
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
-    color: #000000;
+
 }
 
 
@@ -276,9 +274,9 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #000000;
+    border: solid 2px #eee;
     font-size: 20px;
-    color: #000000;
+    color: #eee;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -287,8 +285,8 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 0px #000000;
-    color: #000000;
+    border: solid 0px #eee;
+    color: #eee;
     background: #{{ site.color.primary }};
 }
 
