@@ -465,9 +465,11 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+/*
 .navbar-nav>.active>a {
     background-color: transparent !important;
 }
+*/
 
 /* Fix modal mouse wheel issues */
 /* https://github.com/twbs/bootstrap/issues/16297 */
