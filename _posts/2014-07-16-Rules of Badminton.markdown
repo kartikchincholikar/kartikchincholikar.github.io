@@ -7,5 +7,5 @@ alt: image-alt
 project-date: April 2014
 client: https://www.youtube.com/embed/SpnjWGBEtoU
 category: Teaching
-description: Let's learn (almost) all Badminton Rules via an exibition match.
+description: Let's learn (almost) all Badminton Rules via an exibition match. 
 ---
