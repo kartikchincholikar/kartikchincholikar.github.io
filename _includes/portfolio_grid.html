@@ -16,8 +16,9 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          {% set filename = post.img|trim|lower %}
-          {% if filename.endswith('.webm') %}
+          {% assign filename = post.img | strip | downcase %}
+          {% assign last_five = filename | slice: -5, 5 %}
+          {% if last_five == '.webm' %}
             <video style="width: 100%; height: auto; object-fit: cover;" loop autoplay muted playsinline>
               <source src="img/portfolio/{{ post.img }}" type="video/webm">
               Your browser does not support the video tag.
@@ -29,5 +30,6 @@
       </div>
       {% endfor %}
     </div>
+    
   </div>
 </section>
