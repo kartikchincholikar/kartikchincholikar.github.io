@@ -17,9 +17,17 @@
             </div>
           </div>
           <!--<img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">-->
-          <video width="100%" height="auto" loop autoplay muted>
+          <!-- <video width="100%" height="auto" loop autoplay muted>
             <source src="img/portfolio/{{ post.img }}" type="video/webm">
-          </video>
+          </video> -->
+          {% if post.img.endswith('.webm') %}
+            <video width="100%" height="auto" loop autoplay muted playsinline>
+              <source src="img/portfolio/{{ post.img }}" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          {% else %}
+            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          {% endif %}
         </a>
       </div>
       {% endfor %}
