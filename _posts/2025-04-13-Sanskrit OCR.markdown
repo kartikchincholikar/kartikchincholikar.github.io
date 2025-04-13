@@ -1,8 +1,8 @@
 ---
 layout: default
-modal-id: 6
+modal-id: 5
 date: 2023-10-04
-img: manuscript-digitization.webp
+img: my-website-template.webp
 alt: image-alt
 project-date: October 2023
 client: https://www.youtube.com/embed/p8ZADylZwyE
