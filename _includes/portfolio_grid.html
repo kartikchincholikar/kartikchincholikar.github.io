@@ -16,10 +16,15 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <!--<img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">-->
-          <video width="100%" height="auto" loop autoplay muted>
-            <source src="img/portfolio/{{ post.img }}" type="video/webm">
-          </video>
+          {% set filename = post.img|trim|lower %}
+          {% if filename.endswith('.webm') %}
+            <video style="width: 100%; height: auto; object-fit: cover;" loop autoplay muted playsinline>
+              <source src="img/portfolio/{{ post.img }}" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          {% else %}
+            <img src="img/portfolio/{{ post.img }}" style="width: 100%; height: auto; object-fit: cover;" alt="{{ post.alt }}">
+          {% endif %}
         </a>
       </div>
       {% endfor %}
