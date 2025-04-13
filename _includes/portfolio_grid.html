@@ -2,11 +2,6 @@
 <section id="portfolio">
   <p><br></p>
   <div class="container portfolio-flex-grid">
-<!--    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Portfolio</h2>
-      </div>
-    </div>-->
     <div class="portfolio-flex-row">
       {% for post in site.posts %}
       <div class="portfolio-flex-item portfolio-item">
@@ -16,21 +11,69 @@
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <!--<img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">-->
-          <!-- <video width="100%" height="auto" loop autoplay muted>
-            <source src="img/portfolio/{{ post.img }}" type="video/webm">
-          </video> -->
-          {% if post.img.endswith('.webm') %}
-            <video width="100%" height="auto" loop autoplay muted playsinline>
-              <source src="img/portfolio/{{ post.img }}" type="video/webm">
-              Your browser does not support the video tag.
-            </video>
-          {% else %}
-            <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-          {% endif %}
+          <!-- Media Placeholder: the file (image or video) URL and alt text are stored here -->
+          <div class="media-placeholder"
+               data-file="img/portfolio/{{ post.img }}"
+               data-alt="{{ post.alt }}">
+          </div>
         </a>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Find all media placeholders in the portfolio section
+    var placeholders = document.querySelectorAll('.media-placeholder');
+    
+    // Loop through each placeholder
+    placeholders.forEach(function(placeholder) {
+        // Read data attributes for file path and alt text
+        var file = placeholder.getAttribute('data-file');
+        var alt = placeholder.getAttribute('data-alt') || "";
+        
+        // Sanitize the file string to ensure consistent matching
+        file = file.trim().toLowerCase();
+        // Extract extension from the file string (characters after the last '.')
+        var extension = file.substring(file.lastIndexOf('.') + 1);
+        var element;
+        
+        // Check the extension: if 'webm' create a video; if 'webp' or other image types, create an image
+        if (extension === 'webm') {
+            element = document.createElement('video');
+            element.setAttribute('width', '100%');
+            element.setAttribute('height', 'auto');
+            element.setAttribute('loop', '');
+            element.setAttribute('autoplay', '');
+            element.setAttribute('muted', '');
+            element.setAttribute('playsinline', '');
+      
+            var source = document.createElement('source');
+            source.src = file;
+            source.type = 'video/webm';
+            element.appendChild(source);
+            
+            // Fallback text if video cannot be played
+            element.innerHTML = "Your browser does not support the video tag.";
+        } else if (extension === 'webp' || extension === 'jpg' || extension === 'jpeg' || extension === 'png') {
+            element = document.createElement('img');
+            element.classList.add('img-responsive');
+            element.src = file;
+            element.alt = alt;
+        } else {
+            // Default: assume it's an image if type is not explicitly handled
+            element = document.createElement('img');
+            element.classList.add('img-responsive');
+            element.src = file;
+            element.alt = alt;
+        }
+        
+        // Insert the created element in place of the placeholder
+        placeholder.parentNode.insertBefore(element, placeholder);
+        // Remove the placeholder element
+        placeholder.parentNode.removeChild(placeholder);
+    });
+});
+</script>
