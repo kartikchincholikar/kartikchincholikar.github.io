@@ -156,7 +156,7 @@ footer a {
     background-color: #000;
     margin: auto;
     padding: 40px;
-    border: 4px solid #fff;
+    border: 0px solid #fff;
     width: 90%;
     max-width: 800px;
     position: relative;
@@ -166,7 +166,7 @@ footer a {
 .modal-content iframe {
     width: 100%;
     height: 450px; /* Adjust as needed */
-    border: 2px solid #fff;
+    border: 0px solid #fff;
     margin-bottom: 20px;
 }
 
