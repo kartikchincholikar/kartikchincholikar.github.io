@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Chincholikar</title>
+    <meta name="description" content="Kartik Chincholikar's Portfolio">
+    <meta name="keywords" content="Kartik Chincholikar, kartikchincholikar, Kartik C, Deep Learning, AI, Machine Learning">
+    
+    <!-- Retro Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Your Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Kartik Chincholikar</h1>
+            <hr class="pixel-divider">
+            <a class="button" href="img/RESUME_Kartik_Chincholikar.pdf" target="_blank">[ RESUME ]</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container">
+            <h2>PORTFOLIO</h2>
+            <hr class="pixel-divider">
+            <div class="portfolio-grid">
+                
+                <div class="portfolio-item" data-modal-target="#modal1"><img src="img/portfolio/my-website-template.webp" alt="Vibe Coding Websites"><div class="caption">[ VIEW PROJECT ]</div></div>
+                <div class="portfolio-item" data-modal-target="#modal2"><img src="img/portfolio/manuscript-digitization.webp" alt="Sanskrit OCR"><div class="caption">[ VIEW PROJECT ]</div></div>
+                <div class="portfolio-item" data-modal-target="#modal3"><video loop autoplay muted playsinline><source src="img/portfolio/game.webm" type="video/webm"></video><div class="caption">[ VIEW PROJECT ]</div></div>
+                <div class="portfolio-item" data-modal-target="#modal4"><video loop autoplay muted playsinline><source src="img/portfolio/cabin.webm" type="video/webm"></video><div class="caption">[ VIEW PROJECT ]</div></div>
+                <div class="portfolio-item" data-modal-target="#modal5"><video loop autoplay muted playsinline><source src="img/portfolio/cake.webm" type="video/webm"></video><div class="caption">[ VIEW PROJECT ]</div></div>
+                <div class="portfolio-item" data-modal-target="#modal6"><video loop autoplay muted playsinline><source src="img/portfolio/circus.webm" type="video/webm"></video><div class="caption">[ VIEW PROJECT ]</div></div>
+
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work-ex" class="container">
+            <h2>WORK EX</h2>
+            <hr class="pixel-divider">
+            <ul>
+                <li>Machine Learning Educator on <a href="https://www.youtube.com/@kartikc1233" target="_blank">YouTube</a> [2020-Present]</li>
+                <li>Machine Learning Engineer and Research Associate @ <a href="https://www.flame.edu.in/" target="_blank">FLAME University</a> [2024-Present]</li>
+                <li>Research Associate and Teaching Assistant @ <a href="https://www.equitechfutures.com/" target="_blank">Equitech Futures</a> [2022-2023]</li>
+                <li>Professional Badminton Player and Coach @ <a href="https://www.youtube.com/@BadmintonSchoolHINDI/featured" target="_blank">Badminton School</a> [2014-2022]</li>
+                <li>Scriptwriter and Short-Video Producer as a <b>Freelancer</b> [2019-Present]</li>
+                <li>Sports Gamification and Android Development @ <a href="http://sportshackwellness.com/" target="_blank">SportShack Wellness</a> [2017-2018]</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <h2>EMAIL</h2>
+            <hr class="pixel-divider">
+            <a href="mailto:kartik.niszoig@gmail.com">kartik.niszoig@gmail.com</a>
+        </div>
+    </footer>
+
+    <!-- Modals (Pop-ups for Portfolio) -->
+    <div id="modal1" class="modal"><div class="modal-content"><button class="close-button">×</button><iframe src="https://www.are.na/ai-shappath/vibe-coding-websites" frameborder="0"></iframe><p class="modal-description">Making websites as means of communication and personalization using natural english.</p></div></div>
+    <div id="modal2" class="modal"><div class="modal-content"><button class="close-button">×</button><p>This project has an external link. <a href="https://kartikchincholikar.github.io/sanskrit-ocr/" target="_blank">Click here to view it.</a></p><p class="modal-description">Making websites as means of communication and personalization using natural english.</p></div></div>
+    <div id="modal3" class="modal"><div class="modal-content"><button class="close-button">×</button><iframe src="https://www.youtube.com/embed/p8ZADylZwyE" frameborder="0" allowfullscreen></iframe><p class="modal-description">We know that a rotated fish is still a fish. How can we design Neural Network architectures which respect such facts(Symmetries)? Equivariant Neural Networks leverage knowledge of the symmetries of a learning problem to improve data efficiency, and have been shown to enjoy better scaling behavior than non-equivariant methods in problems with symmetries.</p></div></div>
+    <div id="modal4" class="modal"><div class="modal-content"><button class="close-button">×</button><iframe src="https://www.youtube.com/embed/BePQBWPnYuE" frameborder="0" allowfullscreen></iframe><p class="modal-description">The manifold hypothesis is that real life high-dimensional data of interest often lives in an unknown lower-dimensional manifold embedded in ambient space.</p></div></div>
+    <div id="modal5" class="modal"><div class="modal-content"><button class="close-button">×</button><iframe src="https://www.youtube.com/embed/lsYPC0MuLJA" frameborder="0" allowfullscreen></iframe><p class="modal-description">Can we have a certificate of guarantee in a quality control sense for Neural Networks? NO. Neural Network are too wiggly, hence they always overfit. But all hope is not lost. Neural Networks combined with human supervision and good design leads to faster workflows.</p></div></div>
+    <div id="modal6" class="modal"><div class="modal-content"><button class="close-button">×</button><iframe src="https://www.youtube.com/embed/SpnjWGBEtoU" frameborder="0" allowfullscreen></iframe><p class="modal-description">Let's learn (almost) all Badminton Rules via an exibition match.</p></div></div>
+
+    <!-- Your JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
