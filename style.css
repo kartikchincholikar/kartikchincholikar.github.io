@@ -1,0 +1,201 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    image-rendering: pixelated; /* Sharp pixels for retro feel */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5em; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Reusable pixel divider */
+.pixel-divider {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #fff, #fff 75%, transparent 75%, transparent 100%);
+    background-size: 10px 4px;
+    max-width: 300px;
+    margin: 20px auto 40px;
+}
+
+/* Header Styles */
+header {
+    padding: 60px 0;
+}
+
+header .button {
+    border: 3px solid #fff;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+header .button:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    border: 3px solid #fff;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio-item img,
+.portfolio-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-item .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.2em;
+}
+
+.portfolio-item:hover .caption {
+    opacity: 1;
+}
+
+/* Work Experience List */
+#work-ex ul {
+    list-style-type: '>'; /* Retro-style bullet */
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block; /* Center the block of text */
+}
+
+#work-ex li {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    border-top: 4px solid #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    font-size: 1.2em;
+}
+
+/* Modal (Popup) Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal.active {
+    display: flex; /* Use flex to center content */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #000;
+    margin: auto;
+    padding: 40px;
+    border: 4px solid #fff;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 450px; /* Adjust as needed */
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.modal-description {
+    text-align: left;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.close-button {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #aaa;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
