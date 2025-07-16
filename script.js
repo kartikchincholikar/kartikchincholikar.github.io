@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     const openModalButtons = document.querySelectorAll('[data-modal-target]');
     const closeModalButtons = document.querySelectorAll('.close-button');
 
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal(modal);
         });
     });
-    
+
     // Also close modal if user clicks outside the content area
     window.addEventListener('click', event => {
         if (event.target.classList.contains('modal')) {
@@ -33,5 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modal == null) return;
         modal.classList.remove('active');
     }
-
 });
