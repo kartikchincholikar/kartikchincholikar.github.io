@@ -21,38 +21,26 @@ body {
     padding: 40px 20px;
 }
 
-/* --- CHANGE IS HERE --- */
+/* Link Styles */
 a {
-    color: #CCCCCC; /* A light gray, off-white for all links */
+    color: #a0a0a0; /* Greyer link color */
     text-decoration: none;
-    transition: color 0.2s ease; /* Adds a smooth color change on hover */
+    transition: color 0.2s ease;
 }
 
 a:hover, a:focus {
-    color: #FFFFFF; /* Links become pure white on hover */
+    color: #e0e0e0; /* Lighter grey on hover */
     text-decoration: underline;
 }
-/* --- END OF CHANGE --- */
-
 
 h1 {
-    font-size: 2.5em; /* Responsive font size */
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Reusable pixel divider */
-.pixel-divider {
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, #fff, #fff 75%, transparent 75%, transparent 100%);
-    background-size: 10px 4px;
-    max-width: 300px;
-    margin: 20px auto 40px;
+    margin-bottom: 40px; /* Increased bottom margin for spacing */
 }
 
 /* Header Styles */
@@ -65,7 +53,7 @@ header .button {
     padding: 12px 20px;
     display: inline-block;
     transition: background-color 0.2s, color 0.2s;
-    /* The link color will be inherited from the 'a' tag style above */
+    color: #fff; /* Explicitly set color */
 }
 
 header .button:hover {
@@ -82,10 +70,11 @@ header .button:hover {
 }
 
 .portfolio-item {
-    border: 3px solid #fff;
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    border: none; /* Removed border to get rid of white background */
+    background-color: transparent; /* Ensure no background color */
 }
 
 .portfolio-item img,
@@ -94,6 +83,7 @@ header .button:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+    border: 3px solid #fff; /* Apply border to media instead */
 }
 
 .portfolio-item .caption {
@@ -161,7 +151,7 @@ footer a {
 .modal-content {
     background-color: #000;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
     border: 4px solid #fff;
     width: 90%;
     max-width: 800px;
@@ -171,7 +161,7 @@ footer a {
 
 .modal-content iframe {
     width: 100%;
-    height: 450px; /* Adjust as needed */
+    height: 450px;
     border: 2px solid #fff;
     margin-bottom: 20px;
 }
@@ -204,4 +194,32 @@ footer a {
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobile Friendliness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+
+    #work-ex ul {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #work-ex li {
+        padding-left: 5px;
+    }
 }
