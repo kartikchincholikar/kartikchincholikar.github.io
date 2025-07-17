@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const openModalButtons = document.querySelectorAll('[data-modal-target]');
-    const closeModalButtons = document.querySelectorAll('.close-button');
 
     openModalButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -9,12 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    closeModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal');
-            closeModal(modal);
-        });
-    });
 
     // Also close modal if user clicks outside the content area
     window.addEventListener('click', event => {
