@@ -12,7 +12,8 @@ body {
     font-size: 14px;
     line-height: 1.8;
     text-align: center;
-    image-rendering: pixelated; /* Sharp pixels for retro feel */
+    image-rendering: pixelated;
+    /* Sharp pixels for retro feel */
 }
 
 .container {
@@ -23,13 +24,16 @@ body {
 
 /* Link Styles */
 a {
-    color: #a0a0a0; /* Greyer link color */
+    color: #a0a0a0;
+    /* Greyer link color */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-a:hover, a:focus {
-    color: #e0e0e0; /* Lighter grey on hover */
+a:hover,
+a:focus {
+    color: #e0e0e0;
+    /* Lighter grey on hover */
     text-decoration: underline;
 }
 
@@ -40,7 +44,8 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 40px; /* Increased bottom margin for spacing */
+    margin-bottom: 40px;
+    /* Increased bottom margin for spacing */
 }
 
 /* Header Styles */
@@ -53,7 +58,8 @@ header .button {
     padding: 12px 20px;
     display: inline-block;
     transition: background-color 0.2s, color 0.2s;
-    color: #fff; /* Explicitly set color */
+    color: #fff;
+    /* Explicitly set color */
 }
 
 header .button:hover {
@@ -73,8 +79,10 @@ header .button:hover {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    border: none; /* Removed border to get rid of white background */
-    background-color: transparent; /* Ensure no background color */
+    border: none;
+    /* Removed border to get rid of white background */
+    background-color: transparent;
+    /* Ensure no background color */
 }
 
 .portfolio-item img,
@@ -83,7 +91,8 @@ header .button:hover {
     height: 100%;
     object-fit: cover;
     display: block;
-    border: 3px solid #fff; /* Apply border to media instead */
+    border: 3px solid #fff;
+    /* Apply border to media instead */
 }
 
 .portfolio-item .caption {
@@ -107,10 +116,12 @@ header .button:hover {
 
 /* Work Experience List */
 #work-ex ul {
-    list-style-type: '>'; /* Retro-style bullet */
+    list-style-type: '>';
+    /* Retro-style bullet */
     padding-left: 20px;
     text-align: left;
-    display: inline-block; /* Center the block of text */
+    display: inline-block;
+    /* Center the block of text */
 }
 
 #work-ex li {
@@ -131,7 +142,8 @@ footer a {
 
 /* Modal (Popup) Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -143,7 +155,8 @@ footer a {
 }
 
 .modal.active {
-    display: flex; /* Use flex to center content */
+    display: flex;
+    /* Use flex to center content */
     justify-content: center;
     align-items: center;
 }
@@ -192,8 +205,15 @@ footer a {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* Mobile Friendliness */
@@ -211,7 +231,8 @@ footer a {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Stack items on smaller screens */
+        grid-template-columns: 1fr;
+        /* Stack items on smaller screens */
     }
 
     #work-ex ul {
@@ -221,5 +242,130 @@ footer a {
 
     #work-ex li {
         padding-left: 5px;
+    }
+}
+
+
+/* Chat Widget Styles */
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
+    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+}
+
+#chat-toggle-btn {
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 4px 4px 0px #fff;
+    transition: transform 0.2s;
+}
+
+#chat-toggle-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #fff;
+}
+
+#chat-window {
+    display: none;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    background: #000;
+    border: 3px solid #fff;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    box-shadow: -10px 10px 0px rgba(255, 255, 255, 0.2);
+}
+
+#chat-header {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+#chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    padding: 8px;
+    border: 2px solid #333;
+    max-width: 85%;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.message.user {
+    align-self: flex-end;
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.message.agent,
+.message.system {
+    align-self: flex-start;
+    background: #000;
+    color: #fff;
+    border-color: #fff;
+    text-transform: lowercase;
+}
+
+.media-embed img,
+.media-embed iframe {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #fff;
+}
+
+#chat-input-area {
+    padding: 10px;
+    border-top: 3px solid #fff;
+    display: flex;
+}
+
+#chat-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 10px;
+    outline: none;
+}
+
+#send-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    #chat-window {
+        width: 300px;
+        height: 400px;
+        right: -10px;
     }
 }
