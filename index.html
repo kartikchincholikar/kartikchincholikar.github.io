@@ -16,6 +16,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+document.querySelectorAll('.portfolio-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const modal = document.querySelector(item.dataset.modalTarget);
+        if (modal) modal.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    });
+});
+</script>
+
 <body>
 
     <!-- Header Section -->
