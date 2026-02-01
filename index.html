@@ -25,11 +25,12 @@ document.querySelectorAll('.portfolio-item').forEach(item => {
 });
 
 document.querySelectorAll('.modal').forEach(modal => {
-    modal.addEventListener('click', (e) => {
+    modal.addEventListener('click', e => {
         if (e.target === modal) modal.classList.remove('active');
     });
 });
 </script>
+
 
 <body>
 
