@@ -62,6 +62,10 @@ header .button {
     /* Explicitly set color */
 }
 
+.portfolio-item video {
+    pointer-events: none;
+}
+
 header .button:hover {
     background-color: #fff;
     color: #000;
