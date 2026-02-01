@@ -25,10 +25,10 @@
         <!-- Portfolio Section -->
         <section id="portfolio" class="container">
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-modal-target="#modal2">
+                <a class="portfolio-item" href="https://kartikchincholikar.github.io/sanskrit-ocr/" target="_blank">
                     <img src="img/portfolio/manuscript-digitization.webp" alt="Sanskrit OCR">
                     <div class="caption">[ VIEW PROJECT ]</div>
-                </div>
+                </a>
                 <div class="portfolio-item" data-modal-target="#modal3">
                     <video loop autoplay muted playsinline>
                         <source src="img/portfolio/game.webm" type="video/webm">
@@ -59,17 +59,46 @@
 
     <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <a href="mailto:kartik.niszoig@gmail.com">kartik.niszoig@gmail.com</a>
+        <div class="container footer-socials">
+            <a href="mailto:kartik.niszoig@gmail.com" class="social-icon" aria-label="Email">
+                <!-- Email Icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16v16H4z" />
+                    <path d="M4 4l8 8 8-8" />
+                </svg>
+            </a>
+    
+            <a href="https://x.com/KartikC14" target="_blank" class="social-icon" aria-label="X.com">
+                <!-- X Icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 4l16 16m0-16L4 20" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/kartik-chincholikar-a237a7299/" target="_blank" class="social-icon" aria-label="LinkedIn">
+    <!-- Minimal LinkedIn Icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16"/>
+                    <line x1="9" y1="10" x2="9" y2="16"/>
+                    <circle cx="9" cy="8" r="1"/>
+                    <line x1="13" y1="16" x2="13" y2="12"/>
+                    <path d="M13 12c0-2 3-2 3 0v4"/>
+                </svg>
+            </a>
+
+    
+            <a href="https://www.are.na/ai-shappath/channels" target="_blank" class="social-icon" aria-label="are.na">
+                <!-- are.na minimal square icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16"/>
+                </svg>
+            </a>
         </div>
     </footer>
 
+
     <!-- Modals (Pop-ups for Portfolio) -->
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <p>This project has an external link. <a href="https://kartikchincholikar.github.io/sanskrit-ocr/" target="_blank">Click here to view it.</a></p>
-        </div>
-    </div>
+    
     <div id="modal3" class="modal">
         <div class="modal-content">
             <iframe src="https://www.youtube.com/embed/p8ZADylZwyE" frameborder="0" allowfullscreen></iframe>
